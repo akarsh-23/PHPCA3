@@ -7,7 +7,7 @@
 <?php $posts = getPublishedPosts(); ?>
 
 <?php require_once( ROOT_PATH . '/includes/head_section.php') ?>
-	<title>Te Blog | Home </title>
+	<title>My Blog | Home </title>
 </head>
 <body>
 	<!-- container - wraps whole page -->

@@ -2,7 +2,7 @@
 <?php  include(ROOT_PATH . '/admin/includes/admin_functions.php'); ?>
 <?php  include(ROOT_PATH . '/admin/includes/post_functions.php'); ?>
 <?php include(ROOT_PATH . '/admin/includes/head_section.php'); ?>
-<!-- Get all topics -->
+
 <?php $topics = getAllTopics();	?>
 	<title>Admin | Create Post</title>
 </head>

@@ -1,4 +1,5 @@
-<?php  include('../config.php'); ?>
+	<?php  include('../config.php'); ?>
+	<?php include(ROOT_PATH . '/admin/includes/check_login.php'); ?>
 	<?php include(ROOT_PATH . '/admin/includes/admin_functions.php'); ?>
 	<?php include(ROOT_PATH . '/admin/includes/head_section.php'); ?>
 	<title>Admin | Dashboard</title>

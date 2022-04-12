@@ -29,16 +29,16 @@
 					<?php
 								echo html_entity_decode($post['body']);
 								$conn=mysqli_connect('localhost', 'root', '');
-  							mysqli_select_db('complete-blog-php', $conn);
+  								mysqli_select_db($conn, 'MyBlog');
 								$bd = $post['body'];
 								$vw = ++$post['views'];
 								$sql = "UPDATE posts SET views = $vw where body='$bd'";
-								$res = mysqli_query($sql);
+								$res = mysqli_query($conn, $sql);
 					 ?>
 					 <button class="btn btn-primary" onclick="alert('You Liked The Post')" style="float:right;margin-top:215px"><i onclick="<?php
  								echo html_entity_decode($post['body']);
  								$conn=mysqli_connect('localhost', 'root', '');
-   							mysqli_select_db('complete-blog-php', $conn);
+   								mysqli_select_db($conn, 'MyBlog');
  								$bd = $post['body'];
  								$vw = ++$post['likes'];
  								$sql = "UPDATE posts SET likes = $vw where body='$bd'";
